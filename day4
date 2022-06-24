@@ -66,5 +66,31 @@ html5
   인라인 스타일 > 임베디드 스타일
         
                                                                 
-                                                                
-                                                                
+포토샵 수업
+
+background 특징 => 뒷배경 색상 조절 가능
+background Layer 더블클릭 => ok => 선택영역 삭제시 투명처리
+crop tool => 실제 이미지 파일 크기 조절
+이미지 붙여넣기 할때 일반 레이어로 변경 => 해당 레이어 우클릭 => Rasterize Layer
+Canvas Size => [Image]-[Canvas Size] (Alt+Ctrl+C) => 이미지 사이즈 디테일하게 조절 가능
+Ctrl+T 크기 조절 => 모서리 Ctrl 로 자유 조절가능
+----------------------------------------------
+brush => 붓 만들기 가능 ( new file => width : 50, Height : 50, Resolution : 72, Background Contents: Transparent
+      => defalut color만 가능 ( black, white )
+      => 설정칸 => 톱니 => Legacy Brushes ( 브러쉬 추가 )
+      => edit => Define Brush Preset ( 브러쉬 등록 )
+      =>https://www.brushking.eu/ ( 브러쉬 모음 사이트 )
+      =>설정 => import brush
+pencil tool ( 브러쉬랑 설정방법 동일 )
+----------------------------------------------
+clone stamp tool => art키로 대상 지점 선택 => 복제
+                 => 옵션 두번째 봉투 => 복사본 크기 조절 가능
+pattern stamp tool => 옵션 패턴 선택, 브러쉬와 같이 외부 다운 가능                                                                
+                   => 옵션 Mode => 패턴 섞기 가능
+----------------------------------------------
+spot heeling tool  => 자동 수정 ( 전체 수정 후 clone stamp tool 로 마무리 )
+healing brush tool => 대상 복사할때 사용
+patch tool => 범위 지정 후 대방범위 좌우로 이동해 지우기 가능
+red eye tool => 적목 현상 제거 ( 카메라로 찍을떄 눈빨개짐 )
+                  
+                  
