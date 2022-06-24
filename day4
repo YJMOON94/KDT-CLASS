@@ -1,1 +1,70 @@
+VS CODE setting
 
+ -Live Server 
+ -View in Browser ( html 브라우저 열기 Ctrl + F1 )
+ -Beautify 
+ -Auto Rename Tag
+ -html tag wrapper
+ -prettier
+ -eslint
+ -path intellisense
+ -Bracket Pair Colorizer
+ -Material Icon Theme
+
+웹 기본 특성
+
+   - 모든 경로/파일명 => 영문(대/소),숫자,_, => 첫 글자는 영문
+   - 모든 html(tag,요소,Element)는 소문자 표기
+   - 선저장 후 테스트
+   - 해당 에디터 -> 최상위폴더( root )를 세팅
+   - html은 거의 시작 태그, 끝 태그로 구성
+     ( 예외 태그 <meta> )
+   - css 기본 폰트 : 굴림, 14px , #0000
+
+
+웹 문서 종류
+  - 파일명.html (웹문서)  { Linux, unix => htm ( 3글자 까지만 인식 ) }
+  - 파일명.css ( css style file )
+  - 파일명.js ( javascript file )
+  - 파일명.xml , 파일명.json
+  
+  
+  
+  
+3가지 DOCTYPE ( 템플릿 )
+
+html4.01
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/html4.01-transitional.dtd">
+
+xhtml
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+                                                                http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd => 랜더링 방식 파일 경로
+html5
+<DOCTYPE html>
+                                                                
+-html 태그 방식
+  <tag></tag>
+  
+  <html lang="en"> => 주언어
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> => 반응형 페이지 코드
+  <meta charset="UTF-8"> => 바이너리 방식 ( 언어 처리 코드 )( unicode )
+  -------
+<태그 종류>
+<p> : 단락 요소 , 기본 css => 위 아래 margin 포함
+
+
+<CSS 스타일 3가지 방식>
+ css속성 : 값;
+ 1. 태그에 직접 쓰는법 ( 인라인, 로컬 스타일 )
+ <p style="color: red;">                  
+ 2. 임베디드 스타일
+  <head> 태그 사이에 코딩
+ 
+           
+           
+*우선순위
+  인라인 스타일 > 임베디드 스타일
+        
+                                                                
+                                                                
+                                                                
