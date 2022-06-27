@@ -35,6 +35,7 @@ ex) p : {
   1) p => 단락                                                             *html outliner => 목차 확인 가능
   2) h1~h6 => 제목, 목차 ( h = headline )                                   => html5 페이지에서만 확인 가능
                                                                           + web developer = 개발코드 조정 가능
+                                                                          ( css 코드 제거시 스크린 리더기가 목차를 순서대로 읽을 수 있도록 제작 )
      기본 css => font-size, font-weight : bold;, margin
      w3c( 웹 표준 )-하나의 html 페이지에는 꼭 1개의 <h1> 태그가 존재 ( 로고에 사용 )
      단계 스킵 불가능 ex) h1, h3 ( 불가능 )
@@ -49,9 +50,9 @@ ex) p : {
   4) <span>, <strong>, <em>
      => 특정 키워드/단어/문장의 시각적 표현,강조 요소
      -------------------
-    1) span - css를 사용해 시각적 표현, 주관적 표현
-    2) strong - 기본 css ( font-weight: bold; )=> 강한 강조       * 자식 태그
-    3) em - 기본 css ( font-style: italic; )=> 약한 강조
+    1) span - css를 사용해 문장에서 시각적 표현, 주관적 표현으로 강조하고 싶을 때 사용
+    2) strong - 기본 css ( font-weight: bold; )=> 강한 강조       * 자식 태그          => 스크린 리더기가 읽어줄 때 강조해서 아주크게 말해줌
+    3) em - 기본 css ( font-style: italic; )=> 약한 강조                              => 스크린 리더기가 읽어줄 때 강조해서 크게 말해줌
      -------------------
   5) <br> = 줄바꿈
   6) html 엔티티
