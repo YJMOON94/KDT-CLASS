@@ -62,7 +62,50 @@ ex) p : {
      &amp; = &                            *중요
      https://unicode-table.com/kr/html-entities/ ( html 엔티티 모음 사이트 )
   
+<< 포토샵 수업 >>
   
+  1) blur tool - 원근감 조절
+     sharpen tool - 선명도 조절
+     smudge tool - 손가락으로 문지르는 효과
   
+  2) Dodge tool - 어두운 사진 밝게 만들기  *Select > inverse 로 선택 반전
+     burn tool - 밝은사진 어둡게
+     sponge tool - 채도 빼기  ( mode : Saturate => 채도 높이기, deSaturate => 채도 뺴기
   
+  3) window => history - 작업 순서 기록
+  4) history brush => 원본으로 되돌리는 툴
+     art history brush => 유화 느낌으로 픽셀 뭉그러트리기 가능
+                       => style에서 종류 선택 가능
+  5) eraser tool - 지우개
+     background eraser tool - option => sampling once => 원하는 색상 영역 클릭 => 드래그해서 지우기
+     magic eraser tool - 선택 색상과 비슷한 색상 자동으로 지우기 가능 => tolerance 로 색상 정도 조절 가능
+     Layers tool 에서 nomal 선택자 변경해서 자연스럽게 합성 가능 ( Multiply(어둡게), screen(밝게), overlay(중간톤)
+     
+  6) paint Bucket tool - 색 채우기 툴 ( 옵션창 Contiguous => 전체 색상 변경 가능 )   
+     gradient tool - 그라데이션 툴 ( 옵션에서 조정 )
+  
+ **7) pen tool => shape : 클릭으로 드로잉 ( 시작 꼭지점 마무리 ) => Layers 창 안에서 (shape 1 ) 으로 저장 ( 수정 용이 )
+               => path : 선택 영역 ( window => path )
+               => 클릭, 두번째 클릭시 드래그 ( 곡선 )
+               => 마무리시 esc
+               
+               => 클릭, 두번째 클릭시 shift+드래그 => 곡선 패턴 제작 가능
+               => 클릭+art = 곡선 취소
+               => 반복 ( 누끼 따기 )
+               
+    8) ractangle tool => 도형 그리기 툴 ( 옵션창 shape 옵션 사용 ) => ( 변경 용이 )
+                      => path 옵션 ( 선택 툴 )
+                      => 별모양그리기 ( 옵션창 톱니바퀴 => star ratio ( 50% )
+     
+    9) type tool => 클릭, 작성
+                 => 옵션창 => 봉투 => AA모양( 줄 간격 )
+                 => 글자 크기와 줄간격이 같다면 그 사이값은 0
+                 => 트랜드 ( 글자크기 만큼 공간 주기 { ex) 60px일 떄 공간 90~120px }
+                 => 오른쪽 아래 글자 모양 ( sharp, smooth )
+                 => 줄 간격, 장평, 자간 설정 가능
+  
+                 => 도형 툴로 path, shape 모양에 따라서 텍스트 작성 가능
+                 => 곡선 글자 쓰는법 : pen tool로 path 설정 후 곡선 그리기 => esc로 완성후 type tool로 곡선 선택
+                 => 도형 겉 따라서 글자 쓰는법 : 도형 툴 => path로 그리기 => 텍스트 툴 선택후 도형 선 클릭
+                 => creat wrap text : 글꼴 외곡 가능 + Layers => overlay로 사진과 합성
   
