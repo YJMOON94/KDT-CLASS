@@ -51,7 +51,43 @@
 
 * class, id 동시 호출 가능 => ex) .class명,#id명,.class명 {}
   
-  
+  -------------------
+< 포토샵 수업 >
+
+1.이미지 보정
+- 밝기/명도 - image => adjustments => Brightness/Contrast 조절 가능 ( alt 누르면 cancel => reset으로 변경 가능 )
+- 빛으로 선명도 조절 - [Image]-[Adjustments]-[Levels]
+- 이미지 밝기 조절 - [Image]-[Adjustments]-[Curves]
+- 초점강조,채도 조절 - [Image]-[Adjustments]-[Vibrance] 
+- 전체 색상 톤 바꾸기 - [Image]-[Adjustments]-[Hue/Saturation]
+
+2.사진 색상 보정
+- 사진에 색상을 추가해 전체적으로 보정 가능 [Image]-[Adjustments]-[Color Balance]
+- 사진의 온도 조절 가능 [Image]-[Adjustments]-[Photo Filter]
+- 사진의 느낌 바꾸기 [Image]-[Adjustments]-[Color Lookup] ex) 필름카메라
+- 엑스레이, 필름 효과 내기 [Image]-[Adjustments]-[Invert] ( 색 반전 가능 )
+- 색상 단순화 [Image]-[Adjustments]-[Posterize] ( 픽셀수를 줄여 색을 단순화 하는 기능 )
+
+3. 회색과 검은색으로 표현
+  - 판화 느낌 [Image]-[Adjustments]-[Threshold]
+  - 사진 내에 특정 색상의 전체 변경 [Image]-[Adjustments]-[Selective Color]
+  - 역광사진 보정 [Image]-[Adjustments]-[Shadows/Highlights]
+** - 서로다른 사진의 감도나 색조 통일 [Image]-[Adjustments]-[Match Color] => source 를 맞춰야 될 사진으로 설정 **
+  - 선택한 색상 다른색으로 변경  [Image]-[Adjustments]-[Replace Color]
+
+4. 레이어 관리
+    - V -> 옵션 -> auto-selects 원하는 레이어 화면에서 자동 선택 가능
+    - 레이어 그룹 => ctrl+G
+    - 영역별로 그룹핑 해서 레이어 사용 ex) header 영역, contents 영역, navigator 영역 등
+    - 작업 후에 그룹핑
+    - 작업후에 잠금으로 실수 방지
+    *Rasterize Layer => 일반레이어로 변경 ( adjustment창에 있는 툴 사용 가능 )
+ 
+ 5. 블랜딩 모드
+    - 배경이미지 위에 합성할 이미지 새 Layer로 복사 => Layers 툴 위에 Nomal => 어울리는 블랜딩 모드선택 => 지우개 툴로 불필요한 부분 지우기
+ 
+
+
   
   
  
