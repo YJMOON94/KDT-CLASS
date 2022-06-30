@@ -1,2 +1,31 @@
 <포토샵 수업>
   
+- filter ex) 물방울 효과, 턱깎기
+ 1) 옵션창 Filter => filter gallery필터 조절 가능  => layer 에서 블랜딩모드로 효과 합성 가능
+ 2) Lifufy 에서 사진 외곡, 수정 가능
+ 
+- 액션
+ 1) [Window]-[Action] => 작업 녹화 가능
+ 2) [Action] 창에서 새 폴더 => 녹화하기
+ 3) FIle => export => save fot web => optinized
+ 4) 행동 복사하기 => [File]-[Automate]-[Batch] => 폴더 선택 +> Destination => 저장위치 선택 => Override Action 선택
+ 
+ - Gif 파일 생성
+  1) window => Timeline => create frame animation ( Layer 순서대로 Gif파일 영상 편집 가능 )
+    => Tween Animation Frame ( 자연스러운 화면 전환시 사용 )
+    => 반복횟수 설정 ( once or forever )
+
+ - 웹에서 사용되는 이미지의 종류
+  1) jpg
+    - 해상도가 가장 높다
+    - 투명배경 지원하지 않는다
+    - 저장시 Quality 80%
+  2) gif
+    - 256 color ( 해상도가 낮다 )
+    - 투명배경 지원한다
+    - 애니메이션 지원한다
+    - 저장시 GIF 128 Dithered 사용
+  3) png
+    - 해상도가 높다
+    - 투명배경 지원
+    - 저장시 png24 사용
