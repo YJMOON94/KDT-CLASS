@@ -1,0 +1,71 @@
+<a> 태그의 속성들            * <a href="#"> -임시링크 ( 오류방지 )
+ - inline 속성
+ - title  => ="링크 설명글"
+ 
+ - target => ="_blank" : 새 탭 에서 페이지 열기 => 다른 사이트로 이동할 때 사용
+             ㄴ> title 속성과 꼭 함께 사용 title="???사이트가 새창에 열림" 고정
+          => ="_self"  : 현재 창에서 이동하기 ( 기본 )
+          
+ - ./ => 같은 경로에 있는 링크 호출시 사용
+ 
+ - 상속시( CSS ) : text-decoration / color 는 영향을 받지 않는다.
+ 
+ - 포커스를 받을 수 있는 요소
+ 
+ - 가상 클래스 => 호출방법 : a:link{}, a:visited{}
+    link:       => 최초 페이지가 열렸을때 상황 (기본)
+    visited:    => 사용자가 과거에 링크를 선택한 적이 있을때 
+    hover:      => 현재 마우스 포인터 등으로 가리켜지고 있을때(롤오버) - 주로 사용 ( 모든 태그가 사용 가능 )
+    active:     => 현재 클릭되고 있을때
+    focus:      => 포커스를 받을 때 ( TAB, Shift+TAB )
+    
+  - a 태그 다른 링크 기능
+    jpg, txt, pdf, video, zip 파일 새 창에서 열기 가능 ( zip 파일 = 다운로드 )
+  
+  - 다운로드 가능
+      => 웹 브라우저가 처리할 수 없는 파일의 종류를 href="" 로 연결할때 다운로드
+      => 강제로 다운로드 가능 ( download="" )
+      
+  - 점프메뉴
+      => id 태그로 호출 가능 ex) a href="#아이디명" - 해당 컨텐츠로 이동
+       - a href="#top" ( id명 설정 불필요 ) 최상단 이동
+       
+   - CSS에서 a 태그의 속성을 사용한 결합자 호출방법 ex) .클래스명 a[속성명]{요소;} -> .link a[title]{color: red;}
+      - .link a[href^="https://daum"]{color: #faa} ^= 유사 컨텐츠 ( 백 )
+      - .link a[href$=".com/"]{color: #fa0;} $= 유사 컨텐츠 ( 프론트 )
+      
+<ul> <ol> <dl> 목록태그 => 사용 빈도수가 높다
+ -<ul> / <li>
+    1) 순서없는 목록 ( unorder list ) - 블릿
+    2) <ul>의 직계 자식은 오직 <li> 만 올 수 있다
+    3) block level element
+    4) ul/li에서만 사용 가능한 속성 => list-style(=list-style-type): disc / circle / square / none
+    5) {list-style-position : outside( 기본값 ) 또는 inside} => 블릿의 위치 변경    
+    6) {list-style-image : url(./이미지경로/이미지.jpg)} =>  블릿을 이미지로 변경
+    7) ul 태그 중첩 가능 ex)
+    8) li 태그는 모든 블럭 요소를 자식요소로 가질 수 있다.
+    <ul>
+            <li>1depth 01
+                <ul>
+                    <li>2depth 01
+                        <ul>
+                            <li>3depth 01</li>
+                            <li>3depth 02</li>
+                        </ul>
+                    </li>
+                    <li>2depth 02</li>
+                    <li>2depth 03</li>
+                </ul>
+            </li>
+      </ul>
+
+
+
+
+
+
+
+
+
+
+
