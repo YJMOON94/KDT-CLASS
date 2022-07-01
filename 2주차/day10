@@ -31,8 +31,8 @@
        - a href="#top" ( id명 설정 불필요 ) 최상단 이동
        
    - CSS에서 a 태그의 속성을 사용한 결합자 호출방법 ex) .클래스명 a[속성명]{요소;} -> .link a[title]{color: red;}
-      - .link a[href^="https://daum"]{color: #faa} ^= 유사 컨텐츠 ( 백 )
-      - .link a[href$=".com/"]{color: #fa0;} $= 유사 컨텐츠 ( 프론트 )
+      - .link a[href^="https://daum"]{color: #faa} ^= 유사 컨텐츠 ( 앞 요소 ex(https:// ) )
+      - .link a[href$=".com/"]{color: #fa0;} $= 유사 컨텐츠 ( 뒷 요소 ex(.com))
       
 <ul> <ol> <dl> 목록태그 => 사용 빈도수가 높다
  -<ul> / <li>
