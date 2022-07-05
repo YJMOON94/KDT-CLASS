@@ -1,0 +1,56 @@
+< 코딩수업 >
+
+  1. CSS 약식 
+    1) { font: bold italic 1em/1.5em '돋움' } => 순서 { font: 굵기 기울임 문자크기/줄간격 폰트스타일 }
+    
+  2. 웹 접근성을 향상 시키는 태그들
+    1) blockquote => block 태그
+    2) q          => inline 태그
+       => 공통 속성 cite = "인용한 사이트의 출처/url"
+                   title = "리더기가 읽을 인용문에 대한 상세설명"
+    
+    3) abbr, acronym => inline 태그 ( 축약어 설명 태그 ) 사용법 = <abbr title="설명"> 축약어 </abbr>
+      => 공통 속성 : title
+        
+    4) <del>, <ins> -inline 태그
+      1) <del> = 삭제글 => 삭제된 값 ex) 상품 할인때 현재가격과 할인후 가격 표시때 사용
+      2) <ins> = 추가글 => 현재 값
+      
+    5) <sup>, <sub> -inline 태그
+      1) <sup>2</sup> => x2제곱 으로 표시
+      2) H<sub>2</sub>O => h2O 화학 기호처럼 표시
+      
+    6) <address> - block 태그
+      -1. 주소 나타낼때 사용
+      -2. &copy; = 카피라이트 부호 : address 태그 안에 사용 X ( p태그 안에 사용 )
+      -3. html5 에서는 주소 뿐 아니라 전화번호, 팩스번호, e-mail, sns주소 등등에 사용 ( 피드백을 요하는 글에 작성 )
+      
+   3. 박스모델 ( margin, padding ) => *{ margin:0; padding:0; } : 모든 태그의 여백 초기화
+   
+   *padding + width + border => 모두 합산된다 ( 해당 태그의 전체 크기 )
+   *width, height, margin, padding 은 block level 태그만 사용할 수 있는 속성 ( inline level 은 지원하지 않는다 )
+   *강제로 inline 요소를 block 요소로 바꾸는 속성 : display : block 
+                                                 => 정렬방식, 기본너비의 특성도 함께 바뀐다.
+      1) margin => 사방 박스 바깥 여백
+       -1. 12시부터 시계방향으로 입력 ex) margin: 위쪽값 오른쪽값 아랫값 왼쪽값
+       -2. 한 방향 생략시 반대편 방향 값 따라감 ex) { margin: 위쪽값 오른쪽값 아랫값 } => 왼쪽값 = 오른쪽값
+       -3. [더블마진상하병합] => margin-bottom: 50px; margin-top: 100px 일때 큰값 하나만 처리 100px
+       -4. [더블마진좌우합산] => margin-bottom: 50px; margin-top: 100px 일때 양쪽값 합산해서 처리 150px
+       
+      2) padding => 사방 박스 안쪽 여백
+        -1. margin 과 사용방법 동일
+        
+        
+    4. 이미지 처리방법
+      1) <img> 태그를 사용하는 방법
+         => inline level ( width, height, margin 속성 display:block 없이 사용 가능 )
+         => src="이미지의 경로/파일명.확장명"
+         => alt="텍스트정보/링크정보/" ( 웹 접근성 기본 ) => 생략시 error
+         => 꼭 필요한 경우가 아니라면 height/width 같이 사용 X ( 사진 이미지 비율 깨짐 )
+         => ./ : 해당 경로 ../ : 윗 경로 ../../ : 윗윗경로
+      2) css background-image: / background:url()  속성을 사용하는 방법 ( 배경 )
+         => background-repeat : 패턴 조절 기능
+         => background-position : 사진 이동 가능 ex) { background-position : right center }
+                                                    { background-position : 50px 50px }
+      
+      
