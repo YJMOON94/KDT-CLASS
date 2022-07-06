@@ -1,0 +1,28 @@
+< 오전 코딩 수업 >
+
+  - CSS
+    background-image : url(이미지 경로), background-position: x축값 y축값 , background-repeat = background: #fff url경로 x축 y축 repeat
+    background-attachment: fixed; => 스크롤에 이미지 고정
+    
+  - 레이아웃
+    1)block 요소 기본 정렬방식은 수직/상하 정렬 방식
+      block 요소 정렬방식을 강제로 수평/좌우 정렬로 바꿔야 되는 경우
+    2)강제단 만들기
+      -float: left/right                                                                *float
+                                                                                            -태그가 위치한 left/right 의 빈공간을 바로아래 블록태그가 사용할 수 있게함
+                                                                                            -해당태그 아래에있는 모든 블록태그에 적용됨
+                                                                                       *overflow: hidden, scroll, auto
+                                                                                            -지정한 크기 값보다 자료가 넘쳐 튀어나올때 그 부분에 대한 처리 방법
+        => 문제점 : float을 사용한 요소의 직계부모요소 ( 부모요소가 자식요소를 감싸지 못함 )
+             해결 : 1) 부모태그에 overflow: hidden ( 최선 )
+                    2) 부모태그에 float: left ( 차선 )
+                    
+            문제점 : float을 사용하는 강제/단을 적용해야하는 요소에 width값이 설정된 경우      
+                    1) 좌측단과 우측단에 위치하는 모든 요소에 float을 적용한다
+                    
+      -clear: both
+        => 강제단의 공간을 사용하지 않는다 ( 공간 해제/취소 )
+        
+      -<div>/블럭요소(ul/li) 를 추가한다
+        => 1:1 비율로 만들어서 계산 ( 다수의 레이아웃을 div,ul,lu[ block level element]를 이용해 하나로 묶어준다 )
+      
