@@ -1,0 +1,19 @@
+< 기업형 >
+
+- width: 1200px ( 권장 ) / 1400px, height: 2000px ( crop tool 로 늘려가며 사용 ), 모든 단위는 px
+- 기본 글 내용 font-size: 16px( 권장 ), 14px ( index ), ( sub page = 14~20px )
+- color : #333, #666, #999
+- 해상도 : 72px/inch
+- 비주얼 높이 : 960px~1000px
+- 공간 비율 똑같게 맞추기 ( 룰러 툴 + 스냅 툴 + 사각 선택 툴 )
+- 컨텐츠 ( 도형 ) 배치시 룰러 툴로 공간 먼저잡아서 비율 맞추기
+- 파일명: 기업형_index_초안1_양재문.psd
+
+
+- 참고 사이트( 이미지/아이콘 )
+
+  => 이미지 :  https://www.pinterest.co.kr/
+              https://pixabay.com
+              www.unsplash.com
+              
+  => 아이콘 : https://www.flaticon.com/
