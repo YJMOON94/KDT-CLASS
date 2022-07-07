@@ -1,1 +1,19 @@
 < 코딩 수업 >
+
+  2단 Layout
+  
+  1. 전체화면 박스로 나눠주기 ( div )
+  2. 컨텐츠 작성
+  3. 박스 레이아웃 조절
+  4. text 조절
+  5. header -> content -> footer 순으로 margin, padding 값으로 세부 위치 조절
+  6. inline 태그 설정
+  
+  
+    *margin: auto; ( 자동 좌우 가운데 정렬 )
+      margin-top => 레이아웃 범위설정 문제 생길 때 부모 태그에 overflow: hidden; 으로 해결
+    
+    *레이아웃 구성시 위치가 뒤틀릴때 ( 전체 넓이 값 ( margin + padding + border )을 다시 재조정
+      ex) width: 800px에 border: 1px solid #000 추가 시 width 값을 799px로 수정
+      
+  3단 Layout
