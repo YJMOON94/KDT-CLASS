@@ -1,6 +1,6 @@
 < 코딩 수업 >
 
-  2단 Layout
+ Layout
   
   1. 전체화면 박스로 나눠주기 ( div )
   2. 컨텐츠 작성
@@ -15,5 +15,4 @@
     
     *레이아웃 구성시 위치가 뒤틀릴때 ( 전체 넓이 값 ( margin + padding + border )을 다시 재조정
       ex) width: 800px에 border: 1px solid #000 추가 시 width 값을 799px로 수정
-      
-  3단 Layout
+    *css로 image 파일 링크시 파일 위치 에 따라 ../ or ./ 
