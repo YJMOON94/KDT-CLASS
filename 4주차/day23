@@ -1,2 +1,10 @@
 < 오전 코딩 수업 >
 
+  CSS
+    - <img> 태그 초기화 = {border:0; vertical-align: top;}
+    - float 속성 특징 : 레이아웃 왼쪽, 오른쪽 설정 가능
+                     : 그 다음으로 오는 모든 태그들에 영향을 끼침 ( clear: both; 속성으로 float을 제거하는 역활 )
+                     : 레이아웃에 문제가 생길때 { overflow: hidden; } 으로 해결 - float 을 사용하는 태그들을 부모안에 가두는 역활
+                        => float 다음 태그에 { clear: both: } 가 받쳐줄 경우 굳이 사용X
+    - 레이아웃 설정시 : float, overflow: hidden 을 고려해서 묶기
+    
