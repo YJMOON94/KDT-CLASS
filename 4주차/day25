@@ -1,0 +1,33 @@
+< 오전 코딩 수업 >
+
+  속성 position
+    - 상속 : 코드상의 직계 부모의 css 속성을 그대로 물려받는다 ( absolute/fiexed = width 값은 상속받지 않고 body태그의 100%를 사용 )
+    
+  absolute/fixed 
+  
+    - 자식태그에 absolute 속성을 부여했을때 부모태그에 position:relative/absolute/fixed 를 부여할 경우
+       부모태그의 width값을 받게되고 기준점이 직계 부모로 이동
+       
+    - 자식태그에 fixed 속성을 부여했을때 부모태그에 position:relative/absolute/fixed 를 부여해도
+      기준점과 width 값이 변하지 않는다
+      
+    - 센터정렬 공식
+      left: 50%; top: 50%; margin-left: -width/2; margin-top: -height/2;
+      
+  태그 <table>
+  
+    - 행 <tr> : border 값 먹지않음
+    - 열 <td>
+    - border-collapse: collapse; -> 셀 사이 간격 제거
+    - td 안의 여백은 padding 으로 설정
+    
+    - <th> : 행/열의 제목 ( 가운데정렬/굵게 )
+    - <th scope="row/col"> : 태그의 행/열 설정
+    
+   * html5 에서는 삭제
+      - <table summary="표의 제목"> : 리더기가 읽어주는 표의 제목
+      - <caption> : <table> 태그의 제목
+    
+    - <thead> <tbody> <tfoot> : 코드 순서가 바뀌어도 <thead> <tbody> <tfoot> 순서대로 표 작성
+    - <tfoot> : 리더기가 읽을 때 결과를 먼저 읽을 수 있도록 코드 작성시 <thead> 다음에 작성( 웹 접근성 ) 
+    
