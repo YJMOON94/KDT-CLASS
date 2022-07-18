@@ -21,3 +21,40 @@
       - form 요소들은 <form> 태그가 모두 감싸고 있어야한다 ( 부모 ) => block level elemeent
       
       - <form action="" method="전송방식(get/post)"> 폼요소들 </form>
+      
+      - 폼 요소들
+        1) 공통속성
+          - name="웹개발에서 사용되는 이름"
+          - maxlength="최대글자입력수"
+          - value="실제 입력된 값/ 처리될 값"
+        2) 모든 각각의 폼 요소들은 그에 상응하는 라벨 (label)을 가지고 있어야한다.(웹표준/접근성)
+        3) <label for="해당폼요소의 ID값">대표텍스트</label> => inline level element
+        4) 모두 인라인 요소
+        
+      - <input type="text"> : 텍스트 입력상자
+      
+      - <input type="password"> : 비밀번호 입력상자
+      
+      - <input type="radio"> : 개중 1개 선택박스
+          => 2개 이상의 radio 버튼 사용시 name="이름" 으로 하나의 그룹을 만들어 주어야 교대로 선택이 가능하다
+          => 최초 하나가 선택되어 있어야한다 ex) checked="checked"
+          
+      - <input type="checkbox"> : 다중 선택 상자
+          => 2개 이상일때 name속성 값은 동일/각각 줄 수 있다
+      
+      - <input type="file"> : 파일 찾기 대화상자를 띄운다(파일명.확장자)
+      
+      - <select name="" id=""> : 리스트 선택 상자 <select multiple> : 
+      
+      - <textarea name="" id="" col="열수(너비)" rows="행수">
+        
+        *** 버튼의 종류
+          <input type="submit" value=""> : 전송버튼 (form에 전송)
+          <input type="image" src="./submit.jpg" value="전 송"> : 전송버튼 (form에 전송)
+          <input type="reset" value=""> : 입력취소/다시쓰기
+          
+      - <label> : https://www.wah.or.kr:444/Participation/technique.asp?tab=3
+      
+      
+      
+      
