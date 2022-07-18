@@ -1,0 +1,23 @@
+< 오전 코딩 수업 >
+
+  <table> tag
+    - 셀 합치기
+      <rowspan, colspan> : 공간이 합쳐지는게 아닌 공간이 늘어나는 원리
+    
+    
+      1) 행 합치기 : <td rowspan="합칠갯수">
+      
+      2) 열 합치기 : <td colspan="합칠갯수">
+      
+      3) <thead> 부분의 제목이 복잡할 경우
+        - 각 제목 셀에 id값을 부여 / 각 내용 셀에 ( <td> ) headers를 사용하여 셀 제목을 정의한다
+        - <th> 에는 id값을 준다
+          => ex:<th id="id값">
+                < td headers="id값 id값 id값" >
+                
+    <form> tag
+      - 웹 개발 사용 요소
+      
+      - form 요소들은 <form> 태그가 모두 감싸고 있어야한다 ( 부모 ) => block level elemeent
+      
+      - <form action="" method="전송방식(get/post)"> 폼요소들 </form>
