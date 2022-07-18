@@ -57,4 +57,147 @@
       
       
       
+      <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+
+<style type="text/css">
+   *{margin:0; padding:0;}
+   #form1{width:640px; padding:20px; }
+   table{width:640px; font-family:Verdana, Geneva, sans-serif;
+	      font-size:12px; line-height:135%; border-collapse:collapse; 
+		  color:#333; border:1px solid #ccc;}
+    
+   h3{text-align:center; margin-bottom:10px;}
+   th , td{padding:10px 5px; margin:10px 0;border-top:1px solid #ccc;}
+   th{border-right:1px solid #ccc; width:20%}
+   td{padding-left:20px; width:80%}
+
+   form{border: 1px solid #f00;}
+   
+   .hidden{position: absolute; left:-1000%; top:0; display:block; width: 1px; height: 1px; color: #fff;
+      overflow: hidden;}
+</style>
+</head>
+<body>
+ <div id="form1">
+    <form action="" method="post">
       
+       <table  summary="Every kind of form element">
+          <caption>Every kind of form element</caption>
+          <tbody>
+            <tr>
+               <th scope="row"><label for="user_name">User name</label></th>
+               <td>
+                  <input type="text" id="user_name" name="user_name" maxlength="10" value="">
+                  *이름은 10자 이내로 작성하시오
+               </td>
+            </tr>
+            <tr>
+               <th scope="row"><label for="user_password">password</label></th>
+               <td>
+                  <input type="password"  id="user_password" name="user_password" maxlength="8">
+                  *비밀번호는 8자 이내로 작성하시오
+               </td>
+            </tr>
+            <tr>
+               <th scope="row">gender</th>
+               <td>
+                  <input type="radio" id="user_male" name="radioset" checked value="male">
+                  <label for="user_male">(남)</label>
+                  <input type="radio" id="user_female" name="radioset" value="female">
+                  <label for="user_female">(여)</label>
+               </td>
+            </tr>
+            <tr>
+               <th scope="row">hobby</th>
+               <td>
+                  <input type="checkbox" id="check1" name="check1" value="hobby1">
+                  <label for="check1">독서</label>
+                  <input type="checkbox" id="check2" name="check2" value="hobby2">
+                  <label for="check2">여행</label>
+                  <input type="checkbox" id="check3" name="check3" value="hobby3">
+                  <label for="check3">영화감상</label>
+               </td>
+            </tr>
+            <tr>
+               <th scope="row"><label for="file">add photo</label></th>
+               <td>
+                  <input type="file" name="file" id="file">
+               </td>
+            </tr>
+            <tr>
+               <th scope="row"><label for="grade">graduration</label></th>
+               <td>
+                  <select name="grade" id="grade" >
+                     <option value="">학력선택</option>
+                     <option value="1">고등학교</option>
+                     <option value="2">전문대</option>
+                     <option value="3">대헉교</option>
+                     <option value="4">대학원</option>
+                  </select>
+                  <select name="grade" id="grade" multiple>
+                     
+                     <option value="1">고등학교</option>
+                     <option value="2">전문대</option>
+                     <option value="3">대헉교</option>
+                     <option value="4">대학원</option>
+                  </select>
+               </td>
+            </tr>
+            <tr>
+               <th>HP</th>
+               <td>
+                 <label class="hidden" for="hp_number1" >앞 세자리 선택</label>
+                  <select name="hp_number1" id="hp_number1">
+                     <option value="010">010</option>
+                     <option value="011">011</option>
+                     <option value="017">017</option>
+                     <option value="016">016</option>
+                  </select>
+                  -
+                  <label class="hidden" for="hp_number2" >중간4자리입력</label>
+                  <input type="text" id="hp_number2" name="hp_number2" maxlength="4">
+                   -
+                  <label class="hidden" for="hp_number3" >끝4자리입력</label>
+                  <input type="text" id="hp_number3" name="hp_number3" maxlength="4">
+               </td>
+            </tr>
+            <tr>
+               <th>e-mail</th>
+               <td>
+                  <label class="hidden" for="email1">이메일의 아이디입력</label>
+                  <input type="text" id="email1" name="email1">
+                   @
+                   <label class="hidden" for="email2">이메일 주소입력</label>
+                   <select name="email2" id="email2">
+                     <option value="naver.com">naver.com</option>
+                     <option value="daum.net">daum.net</option>
+                     <option value="google.co.kr">google.co.kr</option>
+                   </select>
+               </td>
+            </tr>
+            <tr>
+               <th scope="row"><label for="description">introduce</label></th>
+               <td>
+                  <textarea name="description" id="description" cols="64" rows="6">자기소개를 50자 이내로 입력하시오
+                  </textarea>
+               </td>
+            </tr>
+            <tr>
+               <td colspan="2" align="center">
+                  <input type="submit" value="회원가입">
+                  <input type="reset" value="다시쓰기">
+                  <input type="button" value="다양한용도의 모양만 버튼">
+                  <input type="image" src="./submit.jpg" value="전 송">
+               </td>
+            </tr>
+          </tbody>
+       </table>
+    </form>
+  </div>
+ 
+</body>
+</html>
