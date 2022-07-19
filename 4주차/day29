@@ -1,0 +1,87 @@
+< 오전 코딩 수업 >
+
+  버튼의 종류
+  
+      <button> : <input>보다 ui표현 방법이 다양하다
+      
+         <button type="submit">전 송</button> : 전송버튼(폼에전송)
+         <button type="reset">다시쓰기</button> : 입력취소/다시쓰기
+         <button type="button">확 인</button> : 일반버튼
+         
+         <tab focus를 가지고 있다( <a>/<form><button> )
+         
+      <form> 태그의 요소들은 모두 인라인 태그지만
+             block level element의 4대 속성( width, height, margin, padding )을 사용할 수 있다
+      
+    - 콘텐츠 UI를 그룹핑 할 때 사용한다   
+      <fieldset> : 블럭요소
+      
+        <legend>입력양식</legend>
+        다양한 콘텐츠 UI
+      </fieldset>
+      
+   - <iframe>
+      1) 특정 영역에 다른 웹 문서를 불러올 수 있다 / 교체할 수 있다
+      2) 속성
+          => src="불러올 페이지 경로"
+          => name="아이프레임명" => <a taget="name값"> 사용 
+          => width / height => 크기설정
+   사용법
+--------------------------------------------------------------------------------------------------- 
+          <div>
+        <h2>아이프레임 사용</h2>
+
+        <ul>
+            <li><a href="./page1.html" target="ifr">menu01</a></li>
+            <li><a href="./page2.html" target="ifr">menu02</a></li>
+            <li><a href="./page3.html" target="ifr">menu03</a></li>
+        </ul>
+        <iframe name="ifr" src="./page1.html" frameborder="0" width="800px" height="600px">
+            <ul>
+
+            </ul>
+        </iframe>
+
+    </div>
+
+------------------------------------------------------------------------------------------------------
+    <div class="video">
+        
+        <h3>홍보영상</h3>
+
+        <div class="video_content">
+            <iframe width="800px" height="550px" src="https://www.youtube.com/embed/jHLI9Iyxt6o"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen; name="video_ifr"></iframe>
+        </div>
+
+        <ul>
+            <li><a href="https://www.youtube.com/embed/rKh7LMjBz6g" target="video_ifr"><img src="./thum1.jpg" alt="영상1"></a></li>
+            <li><a href="https://www.youtube.com/embed/jHLI9Iyxt6o" target="video_ifr"><img src="./thum2.jpg" alt="영상2"></a></li>
+            <li><a href="https://www.youtube.com/embed/waS7s_TLGUw" target="video_ifr"><img src="./thum3.jpg" alt="영상3"></a></li>
+            <li><a href="https://www.youtube.com/embed/_vshIWPJ9KA" target="video_ifr"><img src="./thum4.jpg" alt="영상4"></a></li>
+        </ul>
+    </div>
+    
+     ----------------------------------------------------------------------------------------------------------
+ 
+  <IR - image Replace(이미지 교체기법)>
+    
+    - 실체는 text인데 시각적으로 이미지로 교체하여 보이게하는 방법 ( 웹 접근성 향상 )
+    - 링크( <a> ) 가 걸려있는 경우 IR => 무조건 <a> 태그에 IR을 적용
+    - 마우스 오버시 이미지 교체 효과를 쉽게 줄 수 있다
+    - 해당 내용에 가장 어울리는 태그 사용 ( ex - 조직도=<ul> / 순서=<ol> )
+    
+    ex) a{display: block; width: 224px; height: 54px; border: 1px solid #f00;
+        text-indent: -1000px; overflow:hidden; background: url(logo.jpg);}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
