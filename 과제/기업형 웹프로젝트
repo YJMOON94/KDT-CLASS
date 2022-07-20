@@ -45,3 +45,13 @@
   구성
     - GNB -> visual -> 2depth menu( h3 ) -> title area -> content aera -> footer
     
+  HEADER - MAIN INDEX 복붙
+  VISUAL - width: 2000px / height: 400~500px
+  본문 컨텐츠 제목 - 45~50px, BOLD   기업소개 X / 기업정보 O
+  본문 컨텐츠 내용 - 16/18px
+  
+  비주얼과 본문 타이틀 사이 간격 넓게
+  
+  컨텐츠 본문 줄간격 - 2em
+  
+  2depth 메뉴 글자크기 nav 글자크기와 비슷or같게
