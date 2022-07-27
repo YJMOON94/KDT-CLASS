@@ -16,6 +16,13 @@ HTML5
     figure - 도식 요소 영역의 생성
     
       figure, figcaption - 브라우저가 이해하지 못하는 태그, block
+        <figure>  
+           <img src="images/image.jpg" alt="이미지 설명" />  
+           <figcaption>  
+             <p>이미지 설명 내용 </p>  
+          </figcaption>  
+        </figure>
+        
       <mark> - 텍스트에 형광펜으로 칠한 듯한 효과, inline
         = *strong - 강한강조 -콘텐츠 내용에 의한 객관적 강조
           *em      - 약한강조 -웹 저작자에 의한 주관적 강조
@@ -151,12 +158,43 @@ HTML5
       
         spellcheck -> 맞춤법 검사
         
+      <video> - control API 제공 ( javascript )
         
-      
-      
-      
-      
-      
+        * 비디오 파일 종류 -> mp4/avi/wmf/mkv/flv/f4v/asf/mov/ogv/webm
+        
+        * 영상 파일 변환기 -> https://cdkm.com/kr/mp4-to-ogv
+        
+        * 브라우저별 제공 codec
+        - WebM(.webm), Ogg/Theora(.ogv), MPEG-4/H264(mp4)
+        
+         -크롬 : .mp4, WebM(.webm), Ogg/Theora(.ogv)
+         -사파리 : .mp4, WebM(.webm)
+         -파이어폭스 : WebM(.webm), Ogg/Theora(.ogv), 
+         -오페라 : WebM(.webm), Ogg/Theora(.ogv)
+         -엣지 : .mp4, WebM(.webm), Ogg/Theora(.ogv)
+         -IE : .mp4
+         -웨일 : mp4 WebM(.webm), Ogg/Theora(.ogv)
+        
+       src : 비디오 자원의 경로지정 <source>사용시 생략
+       width : 표시되는 요소의 넓이
+       height : 표시되는 요소의 높이
+       poster : 포스터 이미지를 지정함(영상이 없을때 보여지는 이미지)
+       controls : 컨트롤 패널을 표시함.
+       autoplay : 로드되면 자동 재생함
+       loop : 반복 재생함. => loop="횟수"
+       type : 비디오 코덱 정보를 지정.
+       preload : 영상을 한번에 로딩하지 않고 조금씩 로딩
+        
+       
+     <source src="비디오링크" type="video/ogg"> - 여러개의 비디오 파일 형식 넣는법 ( 아래 코드에서 ogg 형식 지원시 다음태그 무시 )
+       ex)
+         <section class="movie">
+            <video controls="controls" poster="images/po.jpg">
+            <source src="movie/movie2.ogv" type="video/ogg">
+            <source src="movie/movie2.mp4" type="video/mp4">
+            <source src="movie/movie2.webm" type="video/webm">
+            </video>
+          </section>
       
       
       
