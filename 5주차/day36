@@ -1,0 +1,162 @@
+< 오전 코딩 수업 >
+
+HTML5
+
+  ***** HTML5 버전에서 <a> 태그는 블록태그를 감쌀 수 있다 ( a{display:block;} 설정 후 사용 )
+
+  -HTML5의 그룹화 요소 (block)
+    div - 일반적인 그룹핑 요소
+    p   -  문단 영역의 생성
+    ol  -  순서가 있는 목록 영역의 생성
+    ul  -  순서가 없는 목록 영역의 생성
+    li   -  목록의 아이템
+    dl  - 정의형 목록 영역의 생성
+    dt  - 정의형 목록의 정의어
+    dd - 정의형 목록의 설명부
+    figure - 도식 요소 영역의 생성
+    
+      figure, figcaption - 브라우저가 이해하지 못하는 태그, block
+      <mark> - 텍스트에 형광펜으로 칠한 듯한 효과, inline
+        = *strong - 강한강조 -콘텐츠 내용에 의한 객관적 강조
+          *em      - 약한강조 -웹 저작자에 의한 주관적 강조
+          *mark   - 강조의 의미는 아님 - 사용자에 의한 임의적 강조 
+          *span   - 강조의 의미는 아님 - 사용자에 의한 임의적 강조
+          -------<i><b> 사용X-------
+          *i      - 기울임 강조의 의미는 아님 - 사용자에 의한 임의적 강조
+          *b      - 굵기 강조의 의미는 아님 - 사용자에 의한 임의적 강조
+          
+      <time> - 태그로 날짜 지정시 브라우저도 날짜를 인식 -inline ex) <time datetime="2010-06-10T13:00:00" pubdate>2010년 6월 10일 오후 1시</time>
+      
+      <address> - 사용자로부터 피드백을 요하는 컨텐츠에 사용 ( 이메일, 전화번호, 팩스, sns주소 등 ) -block
+      
+      <hr> - 선 태그 ( 단락을 나누어줌 ) -inline -사용X
+      
+      <ruby> - 인라인 -한자쓸때 씀 ex)<ruby>進<rt>나아갈 진</rt></ruby> 
+      
+      <meter> - inline(ui 태그이기 때문에 border값이 먹지않는다)
+                ex) 
+                1.  <meter id='disk-usage' 
+                    title='수학점수' 
+                    max='100' 
+                    min='10' 
+                    value='50'>
+                    <span class='total'>1500</span>GB 중
+                    <span class='used'>460</span>GB 사용 중  => span 태그는 meter 태그를 지원하지 않는 브라우저를 위한 태그
+                 
+                 2. span태그로도 표현 가능
+                    -CSS-
+                     .box{width:300px; height: 50px; background: #ccc; border:1px solid green
+                          ;border-radius: 15px;}
+                      .box span{display: block; width:50%; height:50px;background: #f00;
+                          border-radius: 15px;}
+                          
+      <progress> - inline (meter 와 비슷하나 진행바 이기 때문에 min값은 없음)
+                   ex) 
+                           <h2>Task Progress</h2>
+                            <p>Progress:
+                             <progress value="75" max="100">3/4 complete</progress>
+                            </p>
+      
+      <details> - block ( 기본 속성값은 close, 처음엔 summary 값만 표시, 버튼을 누르면 전체 내용을 다시 나타냄 )
+                  ex) 
+                      <details open>
+                      <summary>생생한 바다생활 체험!</summary>
+                      <img src="./images/image.jpg" alt="">
+                      <p>세상에서 가장 재미있난 바다 SHOW! 물개, 바다표범, 펭귄,다이버, 살아있는 모든 것이 SHOW가 된다! 바다위를 걷고, 바다폭포를 타고, 보다 가까이</p>
+                      </details>
+      
+      <input type=""> 속성
+      
+        type="email" - txetbox에 email 방식으로 주소를 입력하게끔 경고 메세지 script 내장
+          *placeholder="예시" - 예시 email 
+          *required - 해당 박스 입력하지 않을 시 경고 메세지
+        
+        type="url" - 입력방식이 http:// 와 같이 url 방식이 아닐때 경고 메세지
+        
+      * type="number" - 입력방식이 숫자만 올 수 있게 아닐시 경고 메세지
+          step="숫자" - 박스 안에 화살표로 늘어나는 값 ex) step="2" -> 2씩 증가
+          value="현재값"
+          min="최솟값"
+          max="최댓값"
+      
+        type="range" - 
+          min="최솟값"
+          max="최댓값"
+          step="선택크기값"
+          value="시작값"
+          
+      * 달력 API  
+          type="time" -시간 API
+          type="date" -날짜 API
+          type="datetime-local" -시간,날짜 API
+          type="week" -주 API
+          type="month" -달 API
+      
+      -----사용 X------
+        type="search" - 검색어 입력창
+        
+        type="tel" - 전화번호 입력창
+      ------------------
+        type="color" - 색상 선택 입력창
+      
+      
+      <output> - 출력값
+      
+        더하기 박스
+          *parseInt() - (정수값만 사용)
+          
+        <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+          <input type="number" name="a" min="0" max="100" step="1" value="0" />
+          + <input type="number" name="b" min="0" max="100" step="1" value="0" />
+          = <output name="x" for="a b">0</output>
+         </form>
+      
+      <datalist> - 추천 검색어 리스트
+        
+        ex)
+         <form id="datalistTest" action="00_action.php" method="post">
+            <label for="keyword">검색어를 입력하세요</label>
+            <input type="search" id="keyword" name="keyword" list="dataList_id">
+
+            <datalist id="dataList_id">
+               <option value="html5"></option>
+               <option value="html5 video"></option>
+               <option value="html5 강좌"></option>
+               <option value="html5 canvas"></option>
+               <option value="html5 demo"></option>
+            </datalist>
+            <button type="submit">전송</button> 
+         </form>
+      
+      <datalist> -> select 태그의 option처럼 option 안의 value 값을 나타내기 위한 코드
+      
+        autofocus="autofocus" -> 페이지 로딩시 자동 선택 ( 접근성 때문에 사용 X )
+        
+        required -> 필수입력항목
+        
+        pattern ->                                       *\d{숫자} = 숫자 자릿수
+        http://html5pattern.com/ -> 패턴 사용방식 사이트
+        
+        contenteditable="true" -> input 태그처럼 해당 태그의 내용 사용자가 수정 가능
+        ex)
+          <p contenteditable="true">
+              [contenteditable]속성이 "true"가 적용된 요소입니다.
+           </p>
+        
+        draggable="ture" -> 웹페이지 바깥으로의 드래그 가능 ( 바탕화면으로 드래그 => 이미지 복사저장 )
+        draggable="false" -> 웹페이지 바깥으로의 드래그 불가능
+        
+        
+        hidden -> CSS display:none; 과 같음
+      
+        spellcheck -> 맞춤법 검사
+        
+        
+      
+      
+      
+      
+      
+      
+      
+      
