@@ -1,0 +1,366 @@
+35일차 html5 버전 업그레이드
+
+/* CSS Document */
+#wrap{width: 100%; overflow: hidden;}
+
+#header{overflow: hidden; border-top: 7px solid #1e2285;
+        width:100%; position: fixed; left:0; top:0; z-index: 30;
+        background: #fff; border-bottom: 1px solid #ccc;}
+#header .headerInner{width: 1010px; margin: 0 auto;}
+#header .logo{ float: left; margin: 50px 0 45px 20px;}
+#header .logo a{display: block;
+    width:212px ; height: 42px;
+   text-indent: -999px; overflow: hidden;
+   background: url(../images/top/top_24.jpg);}
+
+#header .headerRight{width: 751px; float: right;}
+#header .topMenu{overflow: hidden;}
+#header .topMenu ul{overflow: hidden;float: right; 
+                 margin: 15px 10px 20px 0;}
+#header .topMenu li{float: left;padding: 0 10px;
+      background: url(../images/top/top_07.jpg) right center no-repeat;}
+#header .topMenu .last{background: none;}
+#header #nav{font-family: '맑은고딕'; font-size:18px;
+        font-weight: bold; overflow: hidden;}
+#header #nav ul{overflow: hidden; float: right;
+            margin-top: 20px;}
+#header #nav li{float: left; margin-right: 40px;}
+#header #nav .last{margin-right: 20px;}
+
+.main{width: 2000px; text-align: center;
+     position: relative; top:0;left:50%;
+    margin-left: -1000px; background: #72899b;
+    margin-top: 144px;}
+
+#content{width: 1001px; margin: 0 auto;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;}
+#content h3{font-family: '맑은고딕'; font-size:16px;
+    font-weight: bold;margin: 20px 0 20px 20px;
+   letter-spacing: -1px;}
+#content p{font-size: 1em; text-align: justify;
+    line-height: 1.5em; margin: 0 20px;}
+#content .more{display:block; position:absolute ;
+    right:20px; top:30px}    
+
+
+#content .conTop{overflow: hidden;}
+#content .conTop .movie{width: 249px; float: left;
+        position: relative;
+       border-right: 1px solid #ccc;}
+#content .conTop .movie img{margin: 0 0 30px 20px;}
+#content .conTop .movie p{color: blue; 
+    margin-bottom:30px ;}
+#content .conTop .movie ul{list-style: disc;
+    line-height: 1.5em; margin-left: 35px;}
+
+
+#content .conTop .conRight{width:751px; float: right;}
+#content .conTop .conRight .conBox1{overflow: hidden;}
+#content .conTop .conRight .conBox1 .share{width: 251px; height: 228px; float: left; position: relative;
+       background: url(../images/content/content_75.jpg) center bottom no-repeat;}
+
+#content .conTop .conRight .conBox1 .history{width: 249px; float: left;}
+#content .conTop .conRight .conBox1 .history a{display: block;
+          width:249px ; height: 228px;
+          text-indent: -999px; overflow: hidden;
+          background: url(../images/content/content_50.jpg);}
+
+#content .conTop .conRight .conBox1 .recruit{width: 251px; height: 228px; float: right; position: relative;
+    background: url(../images/content/content_79.jpg) center bottom no-repeat;}
+#content .conTop .conRight .conBox1 .recruit .view{display: block; margin: 30px 0 0 20px;}
+
+#content .conTop .conRight .conBox2{overflow: hidden;}
+#content .conTop .conRight .conBox2 .irInfor{width: 251px; float: left;}
+#content .conTop .conRight .conBox2 .irInfor a{display: block;
+   width: 251px; height: 228px; text-indent: -999px;
+  overflow: hidden; background: url(../images/content/content_84.jpg);}
+
+#content .conTop .conRight .conBox2 .newGroup{width: 249px;height: 228px; float: left;  position: relative;
+    background: url(../images/content/content_93.jpg) center bottom no-repeat;}
+
+#content .conTop .conRight .conBox2 .vision{width: 251px; float: right;}
+#content .conTop .conRight .conBox2 .vision a{display: block;
+    width: 251px; height: 228px; text-indent: -999px;
+    overflow: hidden; background: url(../images/content/content_86.jpg);}
+
+#content .conMid{overflow: hidden;
+   border-top: 1px solid #ccc;
+   border-bottom: 1px solid #ccc;}
+#content .conMid .groupSong{width: 250px; height: 228px; float: left;
+    background: url(../images/content/content_116.jpg) 20px bottom no-repeat;}
+#content .conMid .groupSong a{display: block;
+    margin-left: 135px; margin-bottom: 10px;}
+#content .conMid .groupSong p{margin-bottom: 60px;}    
+
+#content .conMid .news{width: 498px; float: left;
+          position:relative;
+          border-left: 1px solid #ccc;
+          border-right: 1px solid #ccc;}
+#content .conMid .news ul{margin-left: 20px; margin-right: 20px;}
+#content .conMid .news li{overflow: hidden;}
+#content .conMid .news .first{
+    padding-bottom: 5px;margin-bottom: 10px;
+    border-bottom: 1px dashed#ccc;}
+#content .conMid .news img{float: left;}
+#content .conMid .news dl{margin-left: 110px;}
+#content .conMid .news dt{font-weight:bold ; 
+      font-size: 1.12em; margin-bottom: 10px;}
+#content .conMid .news a:hover{color: green; text-decoration: underline;}
+#content .conMid .news dd{line-height: 1.5em;} 
+#content .conMid .news span{color: green; display: block;}     
+
+
+#content .conMid .sns{width: 251px; float: right;}
+#content .conMid .sns p{margin-bottom: 10px;}
+#content .conMid .sns span{display: block;margin: 0 0 10px 20px;
+       font-weight: bold;}
+#content .conMid .sns ul{overflow: hidden; margin-left: 20px;}
+#content .conMid .sns li{float: left; margin-right: 15px;}
+
+#content .partner{}
+#content .partner ul{overflow: hidden;
+    margin:35px 45px 35px 65px ;
+   border-top: 1px dashed #ccc;
+   border-bottom: 1px dashed #ccc;
+   padding: 25px 0;}
+#content .partner li{float: left;}
+
+#footer{overflow: hidden; background: #3d5674; color: #fff;}
+#footer .footerInner{width: 1010px; margin: 0 auto;}
+#footer .footerLogo{float: left; margin: 40px 0 0 50px;}
+#footer .footerRight{ float:left; padding-left: 90px;}
+#footer .footerRight ul{overflow: hidden;
+      margin: 15px 0 25px 0;}
+#footer .footerRight li{float: left; margin-right: 20px;}
+#footer .footerRight li a{color: #fff; font-weight: bold;}
+#footer .footerRight address{font-style: normal;
+    line-height: 1.5em; margin-bottom: 10px;}
+#footer .footerRight p{margin-bottom: 25px;}
+
+
+.top{display: block; width: 60px; background:#3d5674 ; 
+  color: #fff; font-size: 1.5em; font-weight: bold;
+  padding: 15px 0; text-align: center;
+  position: fixed; z-index: 40; left:50%; bottom:150px;
+  margin-left: 510px;}
+.popup{position: absolute; left:200px; top:200px}
+
+
+--------------------------------------------------------------
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>현대그룹</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/layout.css">
+</head>
+<body>
+    <div class="skipNav">
+        <a href="#nav">네비게이션바로가기</a>
+        <a href="#content">본문바로가기</a>
+    </div>
+
+    <div id="wrap">
+        <header>
+        <div id="header">
+           <div class="headerInner">
+            <h1 class="logo"><a href="#">현대로고</a></h1>
+            <div class="headerRight">
+                <div class="topMenu">
+                    <ul>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Join</a></li>
+                        <li><a href="#">Id/Pw</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                        <li class="last"><a href="#">English</a></li>
+                    </ul>
+                </div>
+                
+                <nav id="nav">
+                    <h2 class="hidden">글로벌네비게이션영역</h2>
+                    <ul>
+                        <li><h3><a href="#">현대그룹</a></h3></li>
+                        <li><h3><a href="#">사업영역</a></h3></li>
+                        <li><h3><a href="#">투자정보</a></h3></li>
+                        <li><h3><a href="#">사회공헌활동</a></h3></li>
+                        <li><h3><a href="#">현대홍보관</a></h3></li>
+                        <li class="last"><h3><a href="#">채용정보</a></h3></li>
+                    </ul>
+                </nav>
+            </div>
+          </div> 
+        </div>
+        </header>
+        <div class="main">
+            <img src="./images/main/main.jpg" alt="">
+        </div>
+        <article id="content">
+            <h2 class="hidden">본문콘텐츠영역</h2>
+            <div class="conTop">
+                <section class="movie">
+                    <h3>HYUNDAI MOVIE</h3>
+                    <img src="./images/content/content_69.jpg" alt="">
+                    <p>현대는 꿈과 희망을 향한 도전과 창조적 예지로 가득찬 젊음을 사랑합니다.</p>
+                    <ul>
+                        <li>현대엘리베이터 '현대아산타워 </li>
+                        <li>현대상선 홍보영상 </li>
+                        <li>금강산 홍보영상</li>
+                        <li>2007년 현대그룹 신입사원수련대회 </li>
+                        <li>개성 공단 건설 착공식 </li>
+                        <li>개성공단 육로 답사</li>
+                        <li>금강산 육로 시범 관광 </li>
+                    </ul>
+                    <a href="#" class="more">
+                        <img src="./images/content/content_62.jpg" alt="더보기">
+                    </a>
+                </section>
+                <div class="conRight">
+                    <div class="conBox1">
+                        <section class="share">
+                            <h3>HAPPY SHARE</h3>
+                            <p>현대는 사회의 책임 있는 구성원으로서 사회와 지속적인 의사소통을 추구하고 있습니다. 나눔을 통해 사회에서 받은 혜택을 환원하여 함께 성장을 추구하고 있습니다.
+                            </p>
+                            <a href="#" class="more">
+                                <img src="./images/content/content_62.jpg" alt="더보기">
+                            </a>
+                        </section>
+                        <section class="history">
+                            <h3 class="hidden">HYUNDAI 역사관</h3>
+                            <p class="hidden">현대 그룹사 60년- 한국 산업 발전사.....</p>
+                            <a href="#">더보기</a>
+                        </section>
+                        <section class="recruit">
+                            <h3>HYUNDAI RECRUIT</h3>
+                            <p>현대는 꿈과 희망을 향한 도전과 창조적 예지로 가득찬 젊음을 사랑합니다.
+                            </p>
+                            <a href="#" class="view"><img src="./images/content/content_72.jpg" alt="채용정보보기"></a>
+
+                            <a href="#" class="more">
+                                <img src="./images/content/content_62.jpg" alt="더보기">
+                            </a>
+                        </section>
+                    </div>
+                    <div class="conBox2">
+                        <section class="irInfor">
+                            <h3 class="hidden">HYUNDAI 투자</h3>
+                            <p class="hidden">과감한 투자와 적극적인 신성장사업 발굴</p>
+                            <a href="#">더보기</a>
+                        </section>
+                        <section class="newGroup">
+                            <h3>신조직문화 4T</h3>
+                            <p>그룹 재도약을 위한 비전 재정립과 경영이념의 극대화, 현대정신의 계승 및 신 핵심가치 구현을 위해 그룹의 신 조직문화 필요성이 대두 되었습니다.
+                            </p>
+                            <a href="#" class="more">
+                                <img src="./images/content/content_62.jpg" alt="더보기">
+                            </a>
+                        </section>
+                        <section class="vision">
+                            <h3 class="hidden">HYUNDAI 비전관</h3>
+                            <p class="hidden">꿈과 희망의 현대.......</p>
+                            <a href="#">더보기</a>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <div class="conMid">
+                <section class="groupSong">
+                    <h3>HYUNDAI SONG</h3>
+                    <p>함께 성장하며 한결같은 믿음으로 현대그룹을 지켜봐 준 대한민국 국민들을위해, 한국 경제의 모범이 되겠습니다.</p>
+                    <a href="#">
+                        <img src="./images/content/content_123.jpg" alt="다운로드">
+                    </a>
+                    <a href="#">
+                        <img src="./images/content/content_135.jpg" alt="노래듣기">
+                    </a>
+                </section>
+                <section class="news">
+                    <h3>HYUNDAI NEWS</h3>
+                    <ul>
+                        <li class="first">
+                            <a href="#">
+                            <img src="./images/content/content_112.jpg" alt="현정은 현대...바로가기">
+                            <dl>
+                                <dt>
+                                    현정은 현대그룹 회장 자랑스러운 이화인 상 수상
+                                </dt>
+                                <dd>
+                                    31일 이화여대 개교 127주년 기념식에서 현정은 회장은 윤후정 이대 명예총장, 장화인 이화국제재단 부이사장과 함께... 
+                                    <span>[2013-05-31]</span></dd>
+                            </dl>
+                             </a>
+                        </li>
+                            
+                        <li>
+                            <a href="#"><img src="./images/content/content_121.jpg" alt="최고 연 26%...바로가기">
+                            <dl>
+                                <dt>
+                                    최고 연 26% ELS 및 DLS 9종 공모
+                                </dt>
+                                <dd>
+                                    현대증권은 5/28일(화)~30일(목)까지 원금비보장형 ELS 4종, 원금보장형 ELS 3종, 원금비보장형 DLS 1종, 원금보장형... 
+                                    <span>[2013-05-27]</span></dd>
+                            </dl>
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="#" class="more">
+                        <img src="./images/content/content_62.jpg" alt="더보기">
+                    </a>
+                </section>
+                <section class="sns">
+                    <h3>HYUNDAI SNS</h3>
+                    <p>자유롭게 여러분의 이야기를 HYUNDAI의 다양한 소셜에서 함께 나누세요. 현대에서는 많은 사람들과 소통하기위해 다양한 소셜 채널을 제공합니다.</p>
+                    <span>다양한 소셜채널 바로가기</span>
+                    <ul>
+                        <li><a href="#"><img src="./images/content/content_126.jpg" alt="페이스북"></a></li>
+                        <li><a href="#"><img src="./images/content/content_128.jpg" alt="트위터"></a></li>
+                        <li><a href="#"><img src="./images/content/content_130.jpg" alt="블로그"></a></li>
+                        <li><a href="#"><img src="./images/content/content_132.jpg" alt="와이파이"></a></li>
+                    </ul>
+                </section>
+            </div>
+            <div class="partner">
+               <ul>
+                <li><a href="#" target="_blank" title="현대엘리베이터 새창에열림"><img src="./images/content/content_145.jpg" alt="현대엘리베이터"></a></li>
+                <li><a href="#" target="_blank" title="DSME 새창에열림"><img src="./images/content/content_146.jpg" alt="DSME"></a></li>
+                <li><a href="#" target="_blank" title="국토해양부 새창에열림"><img src="./images/content/content_147.jpg" alt="국토해양부"></a></li>
+                <li><a href="#" target="_blank" title="유니온스틸 새창에열림"><img src="./images/content/content_148.jpg" alt="유니온스틸"></a></li>
+                <li><a href="#" target="_blank" title="동부화재 새창에열림"><img src="./images/content/content_149.jpg" alt="동부화재"></a></li>
+                <li><a href="#" target="_blank" title="통일부 새창에열림"><img src="./images/content/content_150.jpg" alt="통일부"></a></li>
+                <li><a href="#" target="_blank" title="POSEF 새창에열림"><img src="./images/content/content_151.jpg" alt="POSEF"></a></li>
+                <li><a href="#" target="_blank" title="현대경제연구원 새창에열림"><img src="./images/content/content_152.jpg" alt="현대경제연구원"></a></li>
+               </ul>
+            </div>
+        </article>
+        <footer>
+        <div id="footer">
+           <div class="footerInner">
+            <img class="footerLogo" src="./images/foot/foot_171.jpg" alt="현대하단로고">
+            <div class="footerRight">
+                <ul>
+                    <li><a href="#">사이트관련문의</a></li>
+                    <li><a href="#">이메일주소무단수집거부</a></li>
+                    <li><a href="#">개인정보취급방법</a></li>
+                    <li><a href="#">사이트맵</a></li>
+                </ul>
+                <address>
+                    현대그룹 CEO : 현정은 회장<br>
+                    주소 :서울특별시 종로구 연지동 1-7 대표전화 : 02-1234-1234 FAX : 02-1234-1234
+                </address>
+                <p>Copyright &copy; by HYUNDAI GROUP. All Rights Reserved. Send e-mails to Webmaster</p>
+            </div>
+           </div>
+        </div>
+    </footer>   
+    </div>
+    <a href="#top" class="top">TOP</a>
+    <aside class="popup">
+        <img src="./images/popup/pop.png" alt="본 사이트는 .......공지팝업입니다">
+    </aside>
+</body>
+</html>
