@@ -83,3 +83,28 @@ CSS3
         
         그라디언트 제너레이터 https://www.colorzilla.com/gradient-editor/
         자동 색상 설정 https://projects.verou.me/prefixfree/
+        
+     border
+        
+        border-radius
+        
+        1)border-radius
+-둥근 모서리 사각형 만들기
+
+border-radius:[length];
+    Box Model 외각선의 곡률 지정(px/%)
+속성 값
+    length : 곡률의 크기
+    border-top-left-radius
+    border-top-right-radius
+    border-bottom-left
+    border-bottom-right으로 개별 지정 가능
+    *margin처럼 약식 가능
+    
+    
+        
+        
+        
+        
+        
+        
