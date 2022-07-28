@@ -89,22 +89,54 @@ CSS3
         border-radius
         
         1)border-radius
--둥근 모서리 사각형 만들기
+         -둥근 모서리 사각형 만들기
 
-border-radius:[length];
-    Box Model 외각선의 곡률 지정(px/%)
-속성 값
-    length : 곡률의 크기
-    border-top-left-radius
-    border-top-right-radius
-    border-bottom-left
-    border-bottom-right으로 개별 지정 가능
-    *margin처럼 약식 가능
+          border-radius:[length];
+              Box Model 외각선의 곡률 지정(px/%)
+          속성 값
+              length : 곡률의 크기
+              border-top-left-radius
+              border-top-right-radius
+              border-bottom-left
+              border-bottom-right으로 개별 지정 가능
+              *margin처럼 약식 가능
+              
+         2) border-image
+           -보더를 이미지로 꾸밀 수 있다.
+           border 속성과 함께 사용해주어야 한다
+           
+           boder-image : source slice repeat repeat;
+           
+           ex)
+           border-image:url(images/borderImg.png) 40 40 40 40 round round;
+           
+           repeat값
+           stretch : 영역을 채울만큼 늘린다
+           repeat : 반복하여 채운다.
+           round : 반복하되 마지막에 이미지가 잘리지않게 줄인다.
+           space : 반복하되 마지막에 이미지가 잘릴 수 있다.
+
+           Slice값 : top rigth bottom left 
     
-    
-        
-        
-        
-        
-        
-        
+         3) box-shadow
+          -박스에 그림자를 넣는 속성.
+          -그림자의 크기는 실제 영역을 차지하지 않음
+          -inline 속성 태그에 적용할때 display:block 처리 후 사용
+          
+            box-shadow : [dx] [dy] [bulr] [spread] [color] [set]
+            가로방향 세로방향 흐려짐 번짐 색상 형태(inset/outset) ;
+            
+         4) outline-offset
+          -요소의 외곽선을 그리는 속성. 표시만 될 뿐 영역을 차지하지는 않는다.
+
+            outline  *약식 가능 ex) outline: 2px solid red 
+            
+                요소의 아웃라인을 그림 border와는 별개의 속성이며 border를 설정한는 것과 같이
+                아래의 속성을 단축하여 사용할 수 있음
+                
+                outline-style : 아웃라인의 형식
+                outline-color : 아웃라인의 색상
+                outline-width : 아웃라인의 두께
+                outline-offset:[d];
+                
+                d : 아웃라인을 옵셋시키는 거리로 음수값도 가능함
