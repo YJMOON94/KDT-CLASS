@@ -57,3 +57,13 @@
   2depth 메뉴 글자크기 nav 글자크기와 비슷or같게
   
   파일명 : 기엽형sub1_1(회사소개)-홍길동.psd
+
+  * 픽토그램 그림자 / 둥근모서리 박스 만들기
+  div{
+      width:600px;
+      padding:30px;
+      border:40px;
+      border-radius: 30px;
+      box-shadow: 2px 2px 10px 6px #ddd;
+      }
+  
