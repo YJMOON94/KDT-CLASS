@@ -1,0 +1,85 @@
+< 오전 코딩 수업 >
+
+<audio>
+
+코덱 종류
+
+  * mp3/ wav/ ogg/ aac ...
+  
+브라우저 지원 사운드 코덱
+
+크롬      - mp3 / ogg / wav
+사파리    - mp3 / ogg / wav
+파이어폭스 - mp3 / ogg / wav
+엣지      - mp3 / ogg / wav
+IE        - mp3
+
+사용법
+
+ex)
+1.
+    <section class="audio">
+    <audio src="./sound/bass.mp3" controls></audio>
+    </section>
+2.
+    <section>
+        <audio id="bass" controls>
+            <source src="./sound/bass.mp3" type="audio/mpeg">
+            <source src="./sound/bass.ogg" type="audio/ogg">
+            <source src="./sound/bass.wav" type="audio/wav">
+        </audio>
+    </section>
+-------------------------------------------------------------------    
+
+CSS3
+
+  selector
+  
+      유사클래스 선택자
+        class명[class^="앞글자"]{}         ^ => front
+        class명[class$="뒷글자"]{}         $ => end
+        class명[class*="포함글자"]{}       * => 
+        
+      필터 선택자 
+        li:nth-child(숫자){} - 앞에서 숫자 번째의 자식요소 선택 ( 숫자 카운팅에 li 요소가 아닌 같은 계층의 요소도 포함 )
+        li:nth-last-child(숫자){} - -뒤에서 숫자 번째의 자식요소 선택
+        li:last-child{} - 마지막 자식요소 선택
+        li:first-child{} - 첫번째 자식요소 선택
+        ----*주로사용----
+        li:nth-of-type(숫자){} -앞에서 숫자 번째의 자식요소 선택 ( 숫자 카운팅에 li요소만 포함 ) 
+        li:nth-last-of-type(숫자){} -뒤에서 숫자 번째의 자식요소 선택 ( 숫자 카운팅에 li요소만 포함 )
+        -----------------
+        li:only-child{} - li 요소가 유일한 자식일때 선택 ( 다른태그가 존재하면 선택하지 않는다 )
+        li:only-of-type{} - li 요소가 유일한 자식일때 선택 ( 다른태그가 존재해도 li요소가 하나라면 선택 )
+        li:not(p){} - p 가 아닌 li 요소만 선택
+        
+        nht-child, nth-of-type 의 () 안에는 숫자 대신 +, n(배수), odd(홀수), even(짝수)등을 사용한 수식도 들어올 수 있다
+     
+              
+    color
+      
+      1)rgba([r],[g],[b],[a]) / hsla([h],[s],[l],[a])
+
+        rgba([r],[g],[b],[a]);
+        r: 빨간색의 수치 0~255
+        g: 녹색의 수치 0~255
+        b: 파란색의 수치 0~255
+        a: 투명도 0~1
+      
+        hsla([h],[s],[l],[a]);
+        h: 색상 값 0~360
+        s: 채도 0~100%
+        l: 명도 0~100%
+        a: 투명도 0~1
+
+
+      2)opacity
+        
+        opacity:.숫자 - 투명도
+        
+      3)gradient
+      
+        확장접두사 -webkit- / -moz- / -o- / -ms-
+        
+        그라디언트 제너레이터 https://www.colorzilla.com/gradient-editor/
+        자동 색상 설정 https://projects.verou.me/prefixfree/
