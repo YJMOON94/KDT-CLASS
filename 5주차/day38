@@ -1,0 +1,90 @@
+< 오전 코딩 수업 >
+CSS3
+
+  background
+
+    1) background:url(링크)
+      -css3에서는 박스요소 1개당 백그라운드 이미지를 여러개를 사용할수 있게 되었음 => 다중 백그라운드
+      -브라우저가 읽지 못할 경우를 대비해서 일반 배경이미지를 넣어 둔다
+      -background:url() 위치 반복형태 
+      -다중 백그라운드를 사용해 이미지가 겹치게 되었을 때 코드상 "위에" 위치한 코드가 화면상 위로 올라간다.
+      -background 태그가 하나의 선택자 안에 두개가 존재할때 코드상 "아래" 위치한 코드만 작동한다
+      
+      2) background-clip
+        -배경이미지의 영향을 받는 부분을 board영역까지 확장할 수 있는 속성.
+        -배경이미지의 repeat 값이 적용되어 있어야 한다
+        
+        background-clip : [keyword];
+            백 그라운 이미지 표시 영역을 지정함.
+        속성 값
+            keyword :
+                padding-box : padding영역부터 까지 배경 이미지를 표시함 (기본값)
+                border-box : border영역까지 배경 이미지를 표시함
+                
+      3) background-origin
+          -배경의 원점을 지정하는 속성(padding/border/content)
+
+          background-origin : [keyword];
+              백 그라운 이미지 원점을 지정함.
+          속성 값
+              keyword :
+                  padding-box : padding영역부터 이미지를 배치함 (기본값)
+                  border-box : border영역부터 이미지를 배치함
+                  content-box : content영역부터 이미지를 배치함
+                  
+      4) background-size 
+          -배경이미지 자체의 크기를 제어할 수 있음
+
+          background-size : [x], [y];
+              백 그라운 이미지의 크기를 지정한다.
+          속성 값
+              [x]% [y]% : 적용되는 요소의 크기에 비례하여 배경 이미지 적용
+              [x]px [y]px : 절대 크기로 배경 이미지 적용
+     ****     cover : 배경 이미지를 늘여 적용되는 요소 전체에 표시
+                ( 비율이 깨지지 않고 짤림, 짤리는 기준이 큰 축에 맞춰진다 )
+              contain : 배경 이미지의 가로 세로 비율을 맞춰 요소에 표시할수 있는 최대 크기로 표시
+                ( 비율이 깨지지 않고 박스안에 맞춰진다, 기준이 작은 축에 맞춰진다 )
+                
+  Font                  @ => 선언( 만들어 놓는다 / 세팅한다 )
+    1) @font-face
+      -웹 페이지에서 사용되는 폰트를 서버로부터 내려받아 사용자의 기기에 설치되어 있지 않은 폰트를 웹상에 표시함.(웹 폰트)
+      -eot폰트로 변환하기
+      http://www.eotfast.com
+      무료다운로드후 설치!
+      변환할 ttf파일을 복사해서 폴더로 옮긴후
+      OETFAST-1파일위로 드래그!!
+      
+      -ttf(truetype) : chorem, safari, firefox, opera, edge ,IE( 부분지원 )
+      -eot : IE~8
+      -woff : IE 9~11
+
+      @font-face{ 
+                 font-family:[폰트명으로 사용할 이름]; 
+                 src:local([사용자 컴퓨터에서 찾아볼 폰트이름]), 
+                 url([서버 측의 폰트경로]) format([폰트형식]); 
+                 }
+              
+    2) 구글폰트 사용법
+      https://fonts.google.com/ -> 폰트선택 -> 굵기선택 ->import 방식 선택 -> 복사
+       - 굵기는 font-weight: 100~700 조절가능
+       
+       ex)
+       <style>
+        notosansKR : @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
+                     p{font-family: 'Noto Sans KR', sans-serif;}
+        roboto : @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap');
+                 p{font-family: 'Roboto', sans-serif;}
+        </style>  
+          
+     3) flaticon font
+     
+      https://fontawesome.com/
+      
+          
+          
+          
+          
+          
+          
+          
+          
