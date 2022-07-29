@@ -76,15 +76,79 @@ CSS3
                  p{font-family: 'Roboto', sans-serif;}
         </style>  
           
-     3) flaticon font
+     3) flaticon font *<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script> ( <i> 태그 안먹을떄 사용 )
      
-      https://fontawesome.com/
+      https://fontawesome.com/  : html5 코드로 텍스트 형식으로 플랫티콘을 만들수 있게 해줌
       
+      * 플랫티콘으로 아이콘을 만들때 텍스트 핸들링 방법으로 조절이 가능하지만 CSS 제거시
+        실제 텍스트는 나오지 않기 떄문에 미리 설정해놓은 텍스트 히든 코드로 아이콘에 대한 설명 숨기기
+        
+     4) text-overflow
+      -문장이 요소 box의 폭보다 더 길 경우, 어떻게 표현할 것인가를 지정.
+      -함께 사용해야하는 속성 : width
+                              white-space: nowrap; (한줄로 처리)
+                              overflow: hidden; (벗어난 텍스트 숨김 처리)
+                              text-overflow: ellipsis; ( 줄임말 (...) )
+                              
+      
+        text-overflow:[keyword];
+            오버플로어 되는 텍스트의 표시를 지정
+        속성 값
+            clip : 지정된 영역의 크기로 잘라낸다.( 기본값 )
+            ellipsis : 지정된 영역의 크기에 맞게 말줄임표를 표시한다. ( ... )
+     
+        ex)
+         여러가지 라인 말줄임
+         -width:px/%
+         -overflow:hidden;
+         -text-overflow:ellipsis;
+         -display:box;
+         -line-clamp:2;
+         -box-orient: vertical;
+         -word-wrap:break-word;
+      
+      5) text-shadow
+        -문자에 그림자를 넣어주는 속성
+        -다중 shadow 가능
+
+          text-shadow:[dx] [dy] [bulr] [color];
+              텍스트에 그림자를 지정함
+              
+          속성 값
+              dx : 본체와 그림자의 가로방향 거리
+              dy : 본체와 그림자의 세로방향 거리
+              bulr : 그림자의 흐려짐 정도
+              color : 그림자의 색상
           
+       6) word-wrap
+        -공란이 없는 구간에서는 줄바꿈이 되질 않는다 이를 처리하는 속성.
+
+        -word-wrap:[keyword];
+            줄 바꿈 속성을 지정
+        속성 값
+            keyword
+                nomal : 공란이 없을경우 줄바꿈을 하지 않음 (기본값)
+                break-wrod : 공란이 없어도 요소의 폭보다 문장의 길이가 길어질경우 줄바꿈을 함 (기본값)
           
+       7) column
+         -다단 문서를 표현해 주는 속성.
+
+          column
+          문장을 다단으로 표시함
+          column-count : 단의 수 
+          column-width : 단의 폭 (px 단위 사용시 min-width 로 계산된다 )
+          column-gap : 단과 단 사이의 거리
+          column-rule : 단과 단 사이의 구분선 지정
+          columns : 한단의폭 단의개수
+          *column-width:300px; column-count:2;   =>  columns:300px 2;  로 줄여 쓸수 있다.
           
-          
-          
-          
-          
-          
+   Rendering
+   
+    resize
+      지정된 요소의 크기를 바꿔주는 속성
+
+      resize :
+              horizontal : 가로방향의 크기를 변경을 할수 있음
+              vertical : 세로방향의 크기를 변경을 할수 있음
+              both : 양 방향의 크기를 변경을 할수 있음
+         
