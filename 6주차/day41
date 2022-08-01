@@ -128,6 +128,8 @@ animation
 transition
   -class나 선택상태 변경되어 속성이 변화할 때 상태 변화를 부드럽게 에니메이션 함
   -초기 속성값이 적용된 위치에 적용 ( 뒤에 적용할 경우 돌아갈때 효과 X )
+  -transition-delay:1s; =? 애니메이션 효과 지연시킬 수있다.
+  
   transition:[변환속성],[변환시간],[변환방법]; 
    -변환속성 : 변환할 속성 all로 지정되면 모든 속성이 영향받음
    -변환시간 : 변화되는 시간을 지정함(초 단위)
@@ -144,7 +146,11 @@ transition
     ease-out : 끝을 느리게
     ease-in-out : 시작과 끝부분을 느리게 재생....
   
-  
+  ex2)
+  .ani1 li:hover dl{} - ( 효과를 줄 때 큰 박스에 hover 를 주고 자식요소에 변화주기 가능 )
     
-    
-    
+
+::before / ::after
+
+  ::before{content:"텍스트"} : 텍스트 = 허상의 텍스트
+   => 텍스트 작성이 가능한 inline 형식의 span 태그
