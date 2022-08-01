@@ -1,1 +1,150 @@
 < 오전 코딩 수업 >
+
+rendering ***
+
+  1) box-sizing
+    -요소박스의 크기영역을 지정해주는 속성
+    -박스의 너비 = width+padding+border (합산)
+    
+      box-sizing :
+      content-box : width+padding+border (합산) - 기본값
+      border-box : width와 height는 padding과 border를 포함한 크기로 적용됨 ( 총 사이즈가 width 값이 됨 )
+
+      가변폭으로 표시되어야 할 경우 border-box로 계산하게 되면 float의 적용이 더 쉬워진다.
+      padding과 border값이 영향을 주지 않기 때문에 크기
+      계산이 더 쉬워진다.
+      
+   2) 2) resize
+        -지정된 요소의 크기를 바꿔주는 속성
+
+        resize : 
+        horizontal : 가로방향의 크기를 변경을 할수 있음
+        vertical : 세로방향의 크기를 변경을 할수 있음
+        both : 양 방향의 크기를 변경을 할수 있음
+         
+display:box ( flex )
+
+  1) box-orient
+  -display:box 가 있어야 사용 가능한 속성
+  
+  -flexible박스의 흐름방향을 지정한다.
+
+    box-orient : 
+    vertical : 박스를 수직방향으로 배치
+    horizontal : 박스를 수평방향으로 배치
+    
+  2) box-direction
+    -순서를 역순으로 바꾼다.
+
+    nomal : 작성된 순서대로 배치
+    reverse : 작성된 순서화 반대로 배치
+
+  3) box-ordinal-group
+    -flexible박스 배치 순서를 임의로 바꿔주는 속성
+
+    box-ordinal-group : number ;
+    
+  4) box-flex    * 아코디언 메뉴에 사용하기 용이
+  
+    -부모공간의 남은 공간을 다 채워주는 속성
+
+      box-flex : 
+      0 : 변화없다
+      1 : 부모공간에 빈공간이 있다면 가득 채운다.
+
+animation
+
+  1) box-reflect
+    -지정된 요소의 반사체를 생성하는 속성
+    -파이어폭스,IE 미지원
+    -전체 크기에 영향을 받지 않는다
+    
+    box-reflect:[반사 방향],[offset 거리],[마스크]
+    ex)
+        #sample img{
+        margin-bottom: 50px;
+        -webkit-box-reflect: below 1px
+        -webkit-gradient(linear,left top,left bottom,
+        from(transparent),color-stop(0.7,transparent),to(white));
+    
+        <div id="sample">
+          <img src="images/photo2.gif" width="300" height="200" alt="image" />
+        </div>
+    
+  2)  transform *****
+    -요소의 형태를 변경함
+    -크기/위치/회전/기울임
+    -한번에 여러 속성 사용 가능
+    -position:relative 속성이 적용된 것 처럼 움직인다
+    ex)
+    transform:skew(0, 50deg) scale(2) rotate(20deg) translate(100px, 50px)
+    
+    -자식요소도 영향을 받으며
+    -주변 다른 요소박스등에 영향을 주지 않음.
+    -적용한 요소의 기준점이 center가 된다
+    
+    
+      transform : 속성(속성값) ;
+        translate([dx],[dy]) : 지정한 크기 만큼 이동 시킴
+        scale([ds]) : 지정한 배율 만큼 확대함(x값, y값 따로가능)
+        rotate([deg]) : 지정한 각도만큼 회전 시킴 *deg = 각도의 단위( 양수는 시계방향, 음수는 반시계방향 )
+        skew([degx],[degy]) : x축, y축 지정한 경사로 기울임
+
+
+
+      ※ scale : scaleX(sx), scaleY(sy) 처럼 지정가능.
+      ※ skew : skewX(각도), skewY(각도) 처럼 지정가능.
+      ※ translate : translateX(tx), translateY(ty) 처럼 지정가능
+
+2D변형
+  * transform:translate
+    -기준점 center center 에서 이동
+    
+  * transform:scale
+    -기준점 center center 에서 크기가 조절됨
+    
+  *transform:origin
+    -기준점 center center 에서 크기가 조절됨
+    -자식요소들에는 효과를 빼려면 부모에 준 효과의 반대값을 적용
+    ex)
+    .box {transform: skewX(-20deg);}
+    .box div{transform: skewX(20deg);}
+    
+  ***transform-origin (해당 요소의 모양 변형 시 변형의 기준점을 변경한다.-기본은 정 중앙이다.)
+    -transform-origin:left top; (left/right/center/top/bottom)
+    -transform-origin:20px 30px;
+    -transform-origin:0% 100%;
+  
+3변형 - transform 속성들 중에서 3d로 변형이 가능한 속성은 translate , rotate 만 가능하다.
+
+ * perspective (원근감을 설정한다.- z축에 해당한다.)
+  
+  - 수치가 작을 수록 왜곡이 커지며, 수치가 커질수록 왜곡은 작아진다.
+  - 3d 변형을 한 요소의 부모 태그에 설정해 주는 것이 일반적이다.
+
+ * translateZ - z축으로 이동한다.- 앞(양수) 뒤(음수)로 이동한다.
+  
+  
+transition
+  -class나 선택상태 변경되어 속성이 변화할 때 상태 변화를 부드럽게 에니메이션 함
+  -초기 속성값이 적용된 위치에 적용 ( 뒤에 적용할 경우 돌아갈때 효과 X )
+  transition:[변환속성],[변환시간],[변환방법]; 
+   -변환속성 : 변환할 속성 all로 지정되면 모든 속성이 영향받음
+   -변환시간 : 변화되는 시간을 지정함(초 단위)
+   -변환방법 : ease, linear, ease-in, ease-out, ease-in-out, cubic-beizer
+   
+  ex)
+    transition-property : all;  
+    transition-duration : 1s;
+    transition-timing-function : ease-out;
+
+    linear : 전구간 동일속도
+    ease : 중간은 빨리 시작과 끝은 느리게
+    ease-in :  시작을 느리게
+    ease-out : 끝을 느리게
+    ease-in-out : 시작과 끝부분을 느리게 재생....
+  
+  
+    
+    
+    
