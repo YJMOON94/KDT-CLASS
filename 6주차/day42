@@ -1,2 +1,56 @@
 < 오전 코딩 수업 >
 
+::before / ::after
+
+  -모든 요소에 앞(::before), 뒤(::after) 에 위치하는 가상 요소
+  -content='문자열' 속성을 가지고있다 ( 가상 텍스트 )
+   text가 없을 경우에도 content:''를 생략하지 않는다
+  -inline 요소
+  -float 사용시 부모에 over:hidden 대신에
+    .box::after{content:''; display:block; clear:both}
+    
+    
+animation
+
+  animation-name : 설정된 keyframe에서 이름
+  animation-delay : 실행전 지연 시간(s)
+  animation-duration : 1회의 실행 시간
+  animation-iteration-count : 반복 횟수 (infinite:반복)
+  animation-timing-function : 속도 형태(ease등…)
+  animation-direction : 반복 형태(alternate:역방향)
+
+  *keyframes
+  @keyframes [애니메이션이름] {
+  from { [초기상태속성값] }
+  [키프레임위치]% { [키프레임 위치에서의 속성값] }
+  to { [종료상태 속성값] }
+  }
+  ex)
+  <style>
+#exampleSub img{ border:5px solid green;}
+@keyframes animationSample{
+	from{
+	  opacity:1.0;
+	  transform:rotate(0deg);
+	}
+	30%{
+	   border:5px solid red;
+	}
+	50%{
+	   opacity:0.1;
+	}
+	70%{
+	   border:5px solid blue;
+	}
+	to{
+	  opacity:1.0;
+	  transform:rotate(360deg);
+	}
+}
+#exampleSub img{
+	animation-name:animationSample;
+	animation-delay:2s;
+	animation-duration:4s;
+	animation-iteration-count:infinite;
+	animation-timing-function:ease-in-out;
+	animation-direction:alternate;}
