@@ -1,0 +1,9 @@
+SVG / CANVAS
+
+svg 파일 불러오기 - 깨지지 않는 vector 이미지
+
+1.illustrator 도형 제작 -> svg 파일로 저장 -> <object data="link" type=""><object>,<img? 태그로 불러오기
+
+2.illustrator 도형 제작 -> svg 코드 복사 ( 코드 양이 적을 때 사용 )
+
+설명 링크 - https://cafe.naver.com/greenjob
