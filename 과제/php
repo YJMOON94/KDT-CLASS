@@ -9,4 +9,15 @@ html 파일 분할
    - 비공개언어
    - 서버에서만 계산
    - pc(client) -> 가상서버
-   - 아차피서버 + php + DB(mySQL)
+   - 개발환경 세팅
+      -> 아차피서버( Apachi server ) + DB(mySQL) + php
+      => AMP(Apachi Mysql Php) : XAMPP (통합패키지) http://sourceforge.net/projects/xampp/
+      => 호스팅 서버 php 버전에 맞는 파일 다운로드 ( cafe24 서버 5.~~ 버전 )
+      => XAMPP Control Panel apache, MySQL : start 
+      => Xampp 저장된 파일경로 -> htdocs( 가상서버폴더 )
+      => 작업폴더 htdocs로 이동
+      => 가상 서버 접속 url : http://localhost/www/
+      => 세팅 https://cafe.naver.com/greenjob
+  header.html / footer.html 로 공통부분을 나누어 주었을때
+  
+  서브페이지의 경로 설정을 위해 sub 페이지용 header.html / footer.html 을 추가로 생성해준다
