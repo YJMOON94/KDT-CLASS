@@ -1,0 +1,12 @@
+html 파일 분할
+
+  부모 html / 자식 html
+  
+  1) javascript -> Ajax
+  2) 웹개발언어 -> asp/jsp/php
+  
+  *php <? include ?>     ex) <? include "header.html" ?>,<? include "footer.html" ?>
+   - 비공개언어
+   - 서버에서만 계산
+   - pc(client) -> 가상서버
+   - 아차피서버 + php + DB(mySQL)
