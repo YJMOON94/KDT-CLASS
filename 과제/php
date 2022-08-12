@@ -18,6 +18,8 @@ html 파일 분할
       => 작업폴더 htdocs로 이동
       => 가상 서버 접속 url : http://localhost/www/
       => 세팅 https://cafe.naver.com/greenjob
+      
+      => 경로 window: c-> xampp -> htdocs ( htdocs가 가상 서버 내용물 삭제 후 www 폴더 삽입해 사용 )
   header.html / footer.html 로 공통부분을 나누어 주었을때
   
   서브페이지의 경로 설정을 위해 sub 페이지용 header.html / footer.html 을 추가로 생성해준다
