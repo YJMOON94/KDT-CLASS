@@ -21,3 +21,7 @@ html 파일 분할
   header.html / footer.html 로 공통부분을 나누어 주었을때
   
   서브페이지의 경로 설정을 위해 sub 페이지용 header.html / footer.html 을 추가로 생성해준다
+
+*파일을 분할 후 파일을 불러 올 때 그 경로의 기준은 나눠진 파일이 아니라 그 부모파일의 경로가 기준이 된다
+  ex) index.html 에 footer.html 과 header.html 을 나누어서 따로 파일로 만들었을 때
+      footer.html에서 이미지를 불러올 때 그 경로의 기준이 index.html이 위치한 곳이 
