@@ -13,6 +13,22 @@
         //조건에 true일 때 처리할 코드;
       }
       
-      
     - 양자택일문 - 조건절 2개
+      if(조건절){
+        //조건에 true일 때 처리할 코드;
+      }else{
+        //조건에 false일 때 처리할 코드;
+      }
+      !(number<1 || number>100) = (number>=1 && number<=100)
+
+      ex) 영어 대/소문자
+       if(alpha>='a' && alpha<='z')
+      ex) 영문
+       if(alpha>='a' && alpha<='z' || alpha>='A' && alpha<='Z')
+      ex) 특수문자가 포함된 영문
+       if(alpha>='a' && alpha<='z' || alpha>='A' && alpha<='Z' || alpha=='#' || alpha=='@')
+       
     - 다중조건문 - 조건절 2개 이상
+      
+       
+       
