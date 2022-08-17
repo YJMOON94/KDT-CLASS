@@ -50,8 +50,9 @@ ECMAScript = javascript
       => 결과값이 true(참)/false(거짓) => 조건문에서 조건절로 사용
       => true : flase/0/null 이 아닌 모든값
       => false : flase/0/null
-      => &&(and) : 양쪽 모두 true 값이어야 true / 나머지는 false
-      => ||(or) : 양쪽 모두 false 값이어야 false / 나머지는 true
+      => &&(and) : 양쪽 모두 true 값이어야 true / 나머지는 false -> 교집함
+      => ||(or) : 양쪽 모두 false 값이어야 false / 나머지는 true -> 합집함
+      => 우선순위 &&(and) > ||(or)
       
     -대입연산자
       => '=' -> 변수=값
