@@ -18,6 +18,7 @@ html 파일 분할
       => 작업폴더 htdocs로 이동
       => 가상 서버 접속 url : http://localhost/www/
       => 세팅 https://cafe.naver.com/greenjob
+      => https://recoveryman.tistory.com/162 -> mac os 참고
       
       => 경로 window: c-> xampp -> htdocs ( htdocs가 가상 서버 내용물 삭제 후 www 폴더 삽입해 사용 )
   header.html / footer.html 로 공통부분을 나누어 주었을때
